@@ -1,0 +1,27 @@
+{
+  "authors": [
+    { "id": 1, "firstName": "Miguel", "lastName": "De Cervantes" },
+    { "id": 2, "firstName": "Jonathan", "lastName": "Swift" },
+    { "id": 3, "firstName": "Jane", "lastName": "Austen" },
+    { "id": 4, "firstName": "Mary", "lastName": "Shelley" },
+    { "id": 5, "firstName": "Alexandre", "lastName": "Dumas" },
+    { "id": 6, "firstName": "Charles", "lastName": "Dickens" },
+    { "id": 7, "firstName": "Herman", "lastName": "Melville" }
+  ],
+  "books": [
+    { "id": 1, "title": "Don Quixote", "author": 1, "year": 1605 },
+    { "id": 2, "title": "Gulliver's Travels", "author": 2, "year": 1726 },
+    { "id": 3, "title": "Emma", "author": 3, "year": 1815 },
+    { "id": 4, "title": "Frankenstein", "author": 4, "year": 1818 },
+    {
+      "id": 5,
+      "title": "The Count of Monte Cristo",
+      "author": 5,
+      "year": 1844
+    },
+    { "id": 6, "title": "David Copperfield", "author": 6, "year": 1849 },
+    { "id": 7, "title": "Moby Dick", "author": 7, "year": 1851 },
+    { "id": 8, "title": "Oliver Twist", "author": 6, "year": 1839 },
+    { "id": 9, "title": "The Three Musketeers", "author": 5, "year": 1844 }
+  ]
+}

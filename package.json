@@ -1,0 +1,40 @@
+{
+  "name": "modern-forms-in-react-workshop",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@apollo/react-hooks": "^3.1.5",
+    "@material-ui/core": "^4.9.14",
+    "@mdx-js/loader": "^1.5.8",
+    "@next/mdx": "^9.4.0",
+    "apollo-boost": "^0.4.8",
+    "apollo-link-context": "^1.0.20",
+    "apollo-server-micro": "^2.13.1",
+    "final-form": "^4.19.1",
+    "final-form-arrays": "^3.0.2",
+    "github-markdown-css": "^4.0.0",
+    "graphql": "^15.0.0",
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "^9.4.0",
+    "normalize.css": "^8.0.1",
+    "prism-react-renderer": "^1.0.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-final-form": "^6.4.0",
+    "react-final-form-arrays": "^3.1.1",
+    "sane-email-validation": "^3.0.1",
+    "ts-json-db": "^2.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^13.13.5",
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
+    "prism-theme-night-owl": "^1.4.0",
+    "typescript": "^3.8.3"
+  },
+  "license": "ISC"
+}

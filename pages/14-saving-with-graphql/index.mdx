@@ -1,0 +1,64 @@
+import BookList from './BookList'
+
+# Exercise 14 – Saving with GraphQL
+
+Modify `pages/14-saving-with-graphql/[bookId].js` to write the form values back to the database.
+
+You will need to click on a book at get to the form.
+
+At any time, if your database gets messed up, you can run `git checkout database.json` to revert to the original values.
+
+<BookList />
+
+## Description
+
+As we have seen, the `onSubmit` function given to `<Form/>` is what is called when our form passes validation and is being submitted. In most use cases, submission is an asynchronous server request, so the `onSubmit` usually returns a `Promise`.
+
+### GraphQL Mutations
+
+Similar to queries, GraphQL mutations are how we transmit data back to the server.
+
+The mutation syntax for our "books" schema looks like this:
+
+```graphql
+mutation($id: Int!, $Book: UpdateBookInput!) {
+  updateBook(id: $id, Book: $Book) {
+    success
+    Book {
+      title
+      author {
+        firstName
+        lastName
+      }
+      year
+    }
+  }
+}
+```
+
+Notice that it returns a `success` boolean as well as letting us query the newly updated values under the `Book` key.
+
+Open up the [GraphQL Playground](/api/graphql) and paste that mutation in. As you might expect, we're going to need some variables.
+
+Paste the following into the "Query Variables" section of the playground:
+
+```json
+{
+  "id": 2,
+  "Book": {
+    "title": "My New Title",
+    "author": {
+      "firstName": "Jane",
+      "lastName": "Doe"
+    },
+    "year": 2020
+}
+```
+
+If you hit ▶️, it will update the book with `id == 2` with our new data. Refresh this page and look at the list at the top to confirm.
+
+Don't forget that at any time, if your database gets messed up, you can run `git checkout database.json` to revert to the original values.
+
+### The `useMutation` hook
+
+The [`useMutation` hook](https://www.apollographql.com/docs/react/api/react-hooks/#usemutation) is very similar to the `useQuery` hook, except that it gives us a function to call to send the data. [Read the official docs](https://www.apollographql.com/docs/react/api/react-hooks/#usemutation) and see if you can figure out how to submit your form data.
