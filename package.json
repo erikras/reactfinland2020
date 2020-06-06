@@ -13,7 +13,7 @@
     "@next/mdx": "^9.4.0",
     "apollo-boost": "^0.4.8",
     "apollo-link-context": "^1.0.20",
-    "apollo-server-micro": "^2.13.1",
+    "apollo-server-micro": "^2.14.2",
     "final-form": "^4.19.1",
     "final-form-arrays": "^3.0.2",
     "github-markdown-css": "^4.0.0",
